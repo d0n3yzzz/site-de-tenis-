@@ -11,10 +11,8 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="header" id="header">
     <a href="#" class="logo">SNEAKER<span>STORE</span></a>
-
     <nav class="menu">
       <a href="#" data-brand="all" class="menu-link active">Todos</a>
       <a href="#" data-brand="Nike" class="menu-link">Nike</a>
@@ -23,19 +21,14 @@
       <a href="#" data-brand="New Balance" class="menu-link">New Balance</a>
       <a href="#" data-brand="Jordan" class="menu-link">Jordan</a>
     </nav>
-
     <div class="header-actions">
       <div class="search-area">
         <input type="text" id="searchInput" placeholder="Buscar tênis..." autocomplete="off">
         <button id="searchButton" aria-label="Buscar">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </button>
-        <button id="clearSearch" class="clear-btn" aria-label="Limpar busca" style="display:none">✕</button>
+        <button id="clearSearch" class="clear-btn" aria-label="Limpar busca" style="display:none" onclick="clearSearch()">✕</button>
       </div>
-      <a href="../login/login.html" class="login-link">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        Entrar
-      </a>
       <a href="../carrinho/carrinho.html" class="cart-link" id="cartCounter">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
         Carrinho <span class="cart-badge" id="cartBadge">0</span>
@@ -43,17 +36,12 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
       <div class="hero-tag animate-in" style="--delay:0.1s">✦ NOVA TEMPORADA 2026</div>
-      <h1 class="animate-in" style="--delay:0.25s">
-        No movimento<br>encontramos<br><em>liberdade</em>
-      </h1>
-      <p class="animate-in" style="--delay:0.4s">
-        Os drops mais desejados do mundo sneaker,<br>agora com entrega expressa.
-      </p>
+      <h1 class="animate-in" style="--delay:0.25s">Vista<br>o <em>futuro</em><br>nos pés</h1>
+      <p class="animate-in" style="--delay:0.4s">Os drops mais desejados do mundo sneaker,<br>agora com entrega expressa.</p>
       <div class="hero-btns animate-in" style="--delay:0.55s">
         <button class="btn-primary" onclick="scrollToProducts()">Explorar Coleção</button>
         <button class="btn-ghost" onclick="scrollToProducts()">Ver Promoções →</button>
@@ -69,14 +57,11 @@
     </div>
   </section>
 
-  <!-- MARCAS -->
   <section class="brands-strip">
     <span>Nike</span><span>Adidas</span><span>Puma</span><span>New Balance</span><span>Jordan</span><span>Vans</span><span>Converse</span><span>Nike</span><span>Adidas</span><span>Puma</span><span>New Balance</span><span>Jordan</span><span>Vans</span><span>Converse</span>
   </section>
 
-  <!-- PRODUTOS -->
   <main class="products-section" id="productsSection">
-
     <div class="section-header">
       <div>
         <p class="section-label">— Destaques da semana</p>
@@ -85,7 +70,6 @@
       <div id="searchResult" class="search-result"></div>
     </div>
 
-    <!-- FILTRO MOBILE -->
     <div class="filter-bar">
       <button class="filter-btn active" data-brand="all">Todos</button>
       <button class="filter-btn" data-brand="Nike">Nike</button>
@@ -97,20 +81,15 @@
 
     <section class="products-grid" id="productsGrid">
 
-      <a href="../Produto/produto.html?id=nike-air-max" class="product-link" data-name="nike air max" data-brand="Nike">
+      <a href="../Produto/produto.html" class="product-link" data-name="nike air max" data-brand="Nike">
         <article class="product-card">
           <div class="card-img-wrap">
             <span class="tag">Novo</span>
             <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800" alt="Nike Air Max" loading="lazy">
-            <div class="card-overlay">
-              <span>Ver Produto</span>
-            </div>
+            <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">Nike</span>
-              <div class="stars">★★★★★</div>
-            </div>
+            <div class="product-top"><span class="brand">Nike</span><div class="stars">★★★★★</div></div>
             <h3>Nike Air Max</h3>
             <div class="product-bottom">
               <strong>R$ 599,90</strong>
@@ -120,17 +99,14 @@
         </article>
       </a>
 
-      <a href="../Produto/produto.html?id=adidas-ultraboost" class="product-link" data-name="adidas ultraboost" data-brand="Adidas">
+      <a href="../Produto/produto.html" class="product-link" data-name="adidas ultraboost" data-brand="Adidas">
         <article class="product-card">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=800" alt="Adidas Ultraboost" loading="lazy">
+            <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/bca8a92780e14b80919cf604d364995d_9366/IG8279_01_standard.jpg" alt="Adidas Ultraboost" loading="lazy">
             <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">Adidas</span>
-              <div class="stars">★★★★★</div>
-            </div>
+            <div class="product-top"><span class="brand">Adidas</span><div class="stars">★★★★★</div></div>
             <h3>Adidas Ultraboost</h3>
             <div class="product-bottom">
               <strong>R$ 699,90</strong>
@@ -140,17 +116,14 @@
         </article>
       </a>
 
-      <a href="../Produto/produto.html?id=puma-rsx" class="product-link" data-name="puma rs-x" data-brand="Puma">
+      <a href="../Produto/produto.html" class="product-link" data-name="puma rs-x" data-brand="Puma">
         <article class="product-card">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=800" alt="Puma RS-X" loading="lazy">
             <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">Puma</span>
-              <div class="stars">★★★★☆</div>
-            </div>
+            <div class="product-top"><span class="brand">Puma</span><div class="stars">★★★★☆</div></div>
             <h3>Puma RS-X</h3>
             <div class="product-bottom">
               <strong>R$ 499,90</strong>
@@ -160,17 +133,14 @@
         </article>
       </a>
 
-      <a href="../Produto/produto.html?id=nb-550" class="product-link" data-name="new balance 550" data-brand="New Balance">
+      <a href="../Produto/produto.html" class="product-link" data-name="new balance 550" data-brand="New Balance">
         <article class="product-card">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=800" alt="New Balance 550" loading="lazy">
             <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">New Balance</span>
-              <div class="stars">★★★★★</div>
-            </div>
+            <div class="product-top"><span class="brand">New Balance</span><div class="stars">★★★★★</div></div>
             <h3>New Balance 550</h3>
             <div class="product-bottom">
               <strong>R$ 749,90</strong>
@@ -180,41 +150,32 @@
         </article>
       </a>
 
-      <a href="../Produto/produto.html?id=jordan-low" class="product-link" data-name="jordan low" data-brand="Jordan">
+      <a href="../Produto/produto.html" class="product-link" data-name="jordan low" data-brand="Jordan">
         <article class="product-card">
           <div class="card-img-wrap">
             <span class="tag sale">-20%</span>
-            <img src="https://images.unsplash.com/photo-1584735175315-9d5df23be4be?q=80&w=800" alt="Jordan Low" loading="lazy">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9909210d-48ba-459e-96f4-faab32a41ce7/WMNS+AIR+JORDAN+1+LOW.png" alt="Jordan Low" loading="lazy">
             <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">Jordan</span>
-              <div class="stars">★★★★★</div>
-            </div>
+            <div class="product-top"><span class="brand">Jordan</span><div class="stars">★★★★★</div></div>
             <h3>Jordan Low</h3>
             <div class="product-bottom">
-              <div>
-                <small class="old-price">R$ 1.124,90</small>
-                <strong>R$ 899,90</strong>
-              </div>
+              <div><small class="old-price">R$ 1.124,90</small><strong>R$ 899,90</strong></div>
               <button class="quick-add" data-id="jordan-low" data-name="Jordan Low" data-brand="Jordan" data-price="899.90" data-image="https://images.unsplash.com/photo-1584735175315-9d5df23be4be?q=80&w=800">+ Carrinho</button>
             </div>
           </div>
         </article>
       </a>
 
-      <a href="../Produto/produto.html?id=adidas-forum" class="product-link" data-name="adidas forum" data-brand="Adidas">
+      <a href="../Produto/produto.html" class="product-link" data-name="adidas forum" data-brand="Adidas">
         <article class="product-card">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=800" alt="Adidas Forum" loading="lazy">
             <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">Adidas</span>
-              <div class="stars">★★★★☆</div>
-            </div>
+            <div class="product-top"><span class="brand">Adidas</span><div class="stars">★★★★☆</div></div>
             <h3>Adidas Forum</h3>
             <div class="product-bottom">
               <strong>R$ 639,90</strong>
@@ -224,17 +185,14 @@
         </article>
       </a>
 
-      <a href="../Produto/produto.html?id=nike-revolution" class="product-link" data-name="nike revolution" data-brand="Nike">
+      <a href="../Produto/produto.html" class="product-link" data-name="nike revolution" data-brand="Nike">
         <article class="product-card">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=800" alt="Nike Revolution" loading="lazy">
             <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">Nike</span>
-              <div class="stars">★★★★☆</div>
-            </div>
+            <div class="product-top"><span class="brand">Nike</span><div class="stars">★★★★☆</div></div>
             <h3>Nike Revolution</h3>
             <div class="product-bottom">
               <strong>R$ 459,90</strong>
@@ -244,7 +202,7 @@
         </article>
       </a>
 
-      <a href="../Produto/produto.html?id=nike-dunk" class="product-link" data-name="nike dunk low" data-brand="Nike">
+      <a href="../Produto/produto.html" class="product-link" data-name="nike dunk low" data-brand="Nike">
         <article class="product-card">
           <div class="card-img-wrap">
             <span class="tag">Hot</span>
@@ -252,10 +210,7 @@
             <div class="card-overlay"><span>Ver Produto</span></div>
           </div>
           <div class="product-info">
-            <div class="product-top">
-              <span class="brand">Nike</span>
-              <div class="stars">★★★★★</div>
-            </div>
+            <div class="product-top"><span class="brand">Nike</span><div class="stars">★★★★★</div></div>
             <h3>Nike Dunk Low</h3>
             <div class="product-bottom">
               <strong>R$ 799,90</strong>
@@ -267,7 +222,6 @@
 
     </section>
 
-    <!-- EMPTY STATE -->
     <div class="empty-state" id="emptyState" style="display:none">
       <div class="empty-icon">👟</div>
       <h3 id="emptyMsg">Nenhum tênis encontrado</h3>
@@ -276,27 +230,13 @@
 
   </main>
 
-  <!-- BANNER FRETE -->
   <section class="shipping-banner">
-    <div class="shipping-item">
-      <span class="ship-icon">🚚</span>
-      <div><strong>Frete Grátis</strong><p>Acima de R$ 500</p></div>
-    </div>
-    <div class="shipping-item">
-      <span class="ship-icon">🔄</span>
-      <div><strong>Troca Fácil</strong><p>30 dias sem custo</p></div>
-    </div>
-    <div class="shipping-item">
-      <span class="ship-icon">🔒</span>
-      <div><strong>Pagamento Seguro</strong><p>Criptografia SSL</p></div>
-    </div>
-    <div class="shipping-item">
-      <span class="ship-icon">⚡</span>
-      <div><strong>Entrega Expressa</strong><p>Em até 2 dias úteis</p></div>
-    </div>
+    <div class="shipping-item"><span class="ship-icon">🚚</span><div><strong>Frete Grátis</strong><p>Acima de R$ 500</p></div></div>
+    <div class="shipping-item"><span class="ship-icon">🔄</span><div><strong>Troca Fácil</strong><p>30 dias sem custo</p></div></div>
+    <div class="shipping-item"><span class="ship-icon">🔒</span><div><strong>Pagamento Seguro</strong><p>Criptografia SSL</p></div></div>
+    <div class="shipping-item"><span class="ship-icon">⚡</span><div><strong>Entrega Expressa</strong><p>Em até 2 dias úteis</p></div></div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-brand">
@@ -305,27 +245,17 @@
       </div>
       <div class="footer-links">
         <h4>Navegação</h4>
-        <a href="#">Home</a>
-        <a href="#">Masculino</a>
-        <a href="#">Feminino</a>
-        <a href="#">Promoções</a>
+        <a href="#">Home</a><a href="#">Masculino</a><a href="#">Feminino</a><a href="#">Promoções</a>
       </div>
       <div class="footer-links">
         <h4>Atendimento</h4>
-        <a href="#">WhatsApp</a>
-        <a href="#">E-mail</a>
-        <a href="#">Trocas e Devoluções</a>
-        <a href="#">Rastrear Pedido</a>
+        <a href="#">WhatsApp</a><a href="#">E-mail</a><a href="#">Trocas e Devoluções</a><a href="#">Rastrear Pedido</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 SneakerStore. Todos os direitos reservados.</p>
-    </div>
+    <div class="footer-bottom"><p>© 2026 SneakerStore. Todos os direitos reservados.</p></div>
   </footer>
 
-  <!-- TOAST NOTIFICATION -->
   <div class="toast" id="toast"></div>
-
   <script src="home.js"></script>
 </body>
 </html>
